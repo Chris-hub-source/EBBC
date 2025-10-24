@@ -243,9 +243,9 @@ header {
     align-items: center;
     gap: 2.25rem;
     --marquee-duration: 28s;
-    animation: marquee linear infinite;
     animation: marquee var(--marquee-duration) linear infinite;
     will-change: transform;
+    width: max-content;
 }
 
 .partner-logo {
@@ -328,6 +328,8 @@ header {
          --marquee-duration: 20s;
         animation: marquee var(--marquee-duration) linear infinite;
         gap: 1.25rem;
+        width: max-content;
+        display: flex;
     }
     .partners-wrap {
         overflow: hidden;
