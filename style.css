@@ -244,6 +244,7 @@ header {
     gap: 2.25rem;
     --marquee-duration: 28s;
     animation: marquee linear infinite;
+    animation: marquee var(--marquee-duration) linear infinite;
     will-change: transform;
 }
 
@@ -324,8 +325,8 @@ header {
    ========================================================================== */
 @media (max-width: 420px) {
     .partners-track {
-        animation: marquee linear infinite;
-        --marquee-duration: 20s;
+         --marquee-duration: 20s;
+        animation: marquee var(--marquee-duration) linear infinite;
         gap: 1.25rem;
     }
     .partners-wrap {

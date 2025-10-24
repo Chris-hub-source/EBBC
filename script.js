@@ -63,16 +63,15 @@ document.addEventListener('DOMContentLoaded', function () {
             startAutoSlide();
         });
     }
+
+
+const partnerTrack = document.querySelector('.partners-track');
+    
+    if (partnerTrack) {
+        partnerTrack.innerHTML += partnerTrack.innerHTML;
+    }
+
+
 });
 
-(function ensurePartnersLoop() {
-    document.addEventListener('DOMContentLoaded', function () {
-        const track = document.querySelector('.partners-track');
-        if (!track) return;
-        //
-        if (track.dataset.duplicated === 'true') return;
-        // 
-        track.innerHTML += track.innerHTML;
-        track.dataset.duplicated = 'true';
-    });
-})();
+
