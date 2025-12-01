@@ -390,6 +390,12 @@ header {
         font-size: 14px;
     }
 
+    .dot {
+        height: 6px; 
+        width: 6px; 
+        margin: 0 2px;
+    }
+
     /* Partners */
     .partner-logo {
         height: 76px;
